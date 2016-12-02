@@ -18,7 +18,7 @@
 2.在html文件中所需的位置插入以下代码段。
 * 两个img标签中的src属性值需要用户设置，其值相同，即为同一张图片。
 * 为保证展示效果，建议图片尺寸在600px*400px以上。
-  ```html
+```html
   <div id='magnifierWrap'>
       <div class="MG-smallImgWrap">
           <img class="MG-smallImg" src="img/demo.jpg">
@@ -28,9 +28,9 @@
           <img class="MG-bigImg" src="img/demo.jpg">
       </div>
   </div>
-  ```
+```
 3.在javascript文件中插入以下代码。
-  ```javascript
+```javascript
   $(document).ready(function(){
       $('#magnifierWrap').imgMagnifier({  
           smallBoxWidth:233,
@@ -39,7 +39,7 @@
           scaleRatio:3
       });
   })
-  ```
+```
 4.Finished。
 
 5.相关参数说明。
