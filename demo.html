@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>imgMagnifierDemo</title>
+	<link rel="stylesheet" href="imgMagnifier.css">
+	<script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id='magnifierWrap'>
+		<div class="MG-smallImgWrap">
+			<img class="MG-smallImg" src="img/demo.jpg">
+			<div class ="magnifier"></div>
+		</div>
+		<div class ="MG-bigImgWrap">
+		    <img class="MG-bigImg" src="img/demo.jpg">
+		</div>
+	</div>
+<script src="imgMagnifier.js"></script>
+<script>
+	$(document).ready(function(){
+		$('#magnifierWrap').imgMagnifier({	
+			smallBoxWidth:233,
+			smallBoxHeight:295,
+			showBoxSize:300,
+			scaleRatio:3
+		});
+	})
+</script>
+</body>
+</html>
